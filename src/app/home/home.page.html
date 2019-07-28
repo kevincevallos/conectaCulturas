@@ -1,14 +1,19 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary" >
     <ion-title>
-      Ionic Blank
+      Wiki App
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="background-image" no-scroll padding>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <ion-button class="buttons" color="success" (click)="login()" >Iniciar Sesión</ion-button>
+  </div>
+  <div class="ion-padding">
+      <ion-button class="buttons" color="danger" (click)="registro()" >Registrarse</ion-button>
+  </div>
+  <div class="ion-padding">
+        <ion-button class="buttons" color="primary" (click)="cargarArchivo()" >Multimedia +</ion-button>
   </div>
 </ion-content>
